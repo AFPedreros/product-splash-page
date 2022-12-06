@@ -1,0 +1,181 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #404040;
+    margin: 0;
+}
+
+/* =================
+  Typography 
+ ================= */
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-shadow: 0 2px #816fca;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin: 0.15em;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.5em;
+}
+
+.beta-text {
+    font-weight: 900;
+    margin-top: 1.5em;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;
+    margin-bottom: 0.5em;
+}
+
+.beta-text,
+.subheading,
+.top-text {
+    text-transform: uppercase;
+}
+
+.top-text {
+    font-size: 0.875rem;
+    font-weight: 900;
+    padding-top: 0.25em;
+    border-top: 5px solid;
+    order: -1;
+    margin: 0 auto;
+}
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
+/* =================
+    Flex containers
+   ================= */
+
+.intro,
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 2.5em;
+}
+
+/* =================
+  Intro
+ ================= */
+
+.intro {
+    color: #fff;
+    background: #9480e4 url("./images/intro-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 2.5em 2.5em;
+    justify-content: space-between;
+}
+
+/* ====================
+  Main content
+ ==================== */
+
+.main-content {
+    align-items: center;
+    padding: 2.5em 2em 0 2em;
+    justify-content: center;
+}
+
+.img-main {
+    width: 120px;
+    border-radius: 100%;
+}
+
+.main-content p,
+form {
+    max-width: 450px;
+}
+
+/* =================
+  Form
+ ================= */
+
+input {
+    font-family: inherit;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.75em;
+    border: 2px solid #d1d5db;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #8a71ec;
+    background-color: #e6e8ec;
+}
+
+.btn {
+    font-family: inherit;
+    border: none;
+    width: 100%;
+    padding: 0.75em;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #8a71ec;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #b7a7f6;
+}
+
+/* =================
+  Media queries 
+ ================= */
+@media (min-width: 576px) {
+    body {
+        display: flex;
+        min-height: 100vh;
+    }
+
+    .intro,
+    .main-content {
+        width: 50%;
+        padding-top: 0;
+    }
+
+    /* =================
+     Typography 
+    ================= */
+
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 2.625rem;
+    }
+
+    .beta-text {
+        font-size: 1.25rem;
+    }
+}
